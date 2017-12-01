@@ -22,7 +22,7 @@ def printList(linkedList):
     :return: None
     """
     while linkedList:
-        print(linkedList.val)
+        print(linkedList.val, end=' ')
         linkedList = linkedList.next
 
 
@@ -65,7 +65,7 @@ def removeDups_no_buffer(linkedList):
 if __name__ == '__main__':
     linkedList = Node(1, Node(2, Node(3, Node(5, Node(3, Node(2, None))))))
     printList(linkedList)
-    print('------------')
+    print('\n------------')
     removeDups_no_buffer(linkedList)
     printList(linkedList)
-    print('------------')
+    print('\n------------')

@@ -25,7 +25,7 @@ def printList(linkedList):
     :return: None
     """
     while linkedList:
-        print(linkedList.val)
+        print(linkedList.val, end=' ')
         linkedList = linkedList.next
 
 
@@ -56,4 +56,7 @@ def partition(linkedList, thresh):
 
 if __name__ == '__main__':
     linkedList = Node(3, Node(5, Node(8, Node(5, Node(10, Node(2, Node(1, None)))))))
+    printList(linkedList)
+    print('\n-------------')
     printList(partition(linkedList, 5))
+    print('\n-------------')

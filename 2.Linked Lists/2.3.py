@@ -21,7 +21,7 @@ def printList(linkedList):
     :return: None
     """
     while linkedList:
-        print(linkedList.val)
+        print(linkedList.val, end=' ')
         linkedList = linkedList.next
 
 
@@ -42,7 +42,7 @@ if __name__ == '__main__':
     linkedList = Node(1, Node(2, Node(3, Node(5, Node(3, Node(2, None))))))
     ptr = linkedList.next.next
     printList(linkedList)
-    print('-----------')
+    print('\n-----------')
     delNode(ptr)
     printList(linkedList)
-    print('-----------')
+    print('\n-----------')
