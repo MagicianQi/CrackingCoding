@@ -30,7 +30,7 @@ def printList(linkedList):
     print('...', end=' ')
 
 
-def loopDetection_1(linkedList):
+def loopDetection(linkedList):
     """
     Take O(n) time and O(1) space
     :param linkedList: Input LinkedList
@@ -60,6 +60,6 @@ if __name__ == '__main__':
     loop.next = list.next.next.next
     printList(list)
     print('\n--------------------------------------------')
-    result = loopDetection_1(list)
+    result = loopDetection(list)
     print(str(result[0]) + '\t' + str(result[1].val), end=' ')
     print('\n--------------------------------------------')
