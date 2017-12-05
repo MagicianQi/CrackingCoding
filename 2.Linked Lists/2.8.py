@@ -41,6 +41,9 @@ def loopDetection(linkedList):
     while fast and fast.next:
         slow = slow.next
         fast = fast.next.next
+        # fast = fast.next.next.next
+        # fast = fast.next.next.next.next
+        # fast = fast.next.next.next.next.next
         if fast == slow:
             break
     if not(fast or fast.next):
