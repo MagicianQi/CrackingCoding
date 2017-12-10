@@ -32,7 +32,7 @@ class Stack:
 
     def pop(self):
         """
-        Take O(n) time
+        Take O(1) time
         :return: None
         """
         self.stack.pop()
@@ -40,7 +40,7 @@ class Stack:
 
     def cal_min(self):
         """
-        Take O(n) time
+        Take O(1) time
         :return: None
         """
         print(self.min[-1])
