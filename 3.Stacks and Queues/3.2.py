@@ -12,7 +12,7 @@ class Stack:
         """
         Take O(n) space
         """
-        self.min = []
+        self.min = []   # min stack
         self.stack = []
 
     def push(self, val):
