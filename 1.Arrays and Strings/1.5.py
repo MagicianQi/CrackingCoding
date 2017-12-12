@@ -3,7 +3,7 @@
 """
 Question 1.5:
     Given two strings, write a function to check if they are one edit(or zero edits) away.
-    edit: insert a character, remove a character, replace a character.
+    one edit: insert a character, remove a character, replace a character.
 """
 
 
