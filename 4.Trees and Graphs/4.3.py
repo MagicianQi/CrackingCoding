@@ -48,7 +48,7 @@ def get_tree():
     b.left = d
     c.left = e
     c.right = f
-    d.right = g
+    e.right = g
     return a
 
 
