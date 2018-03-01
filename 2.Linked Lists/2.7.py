@@ -28,16 +28,18 @@ def getIntersection(linkedList_1, linkedList_2):
     :param linkedList_2: Input LinkedList 2
     :return: Intersection
     """
-    length_1 = 0
-    length_2 = 0
+    length_1 = 1
+    length_2 = 1
     temp_1 = linkedList_1
     temp_2 = linkedList_2
-    while temp_1:
+    while temp_1.next:
         length_1 += 1
         temp_1 = temp_1.next
-    while temp_2:
+    while temp_2.next:
         length_2 += 1
         temp_2 = temp_2.next
+    if temp_1 != temp_2:
+        return False, None
     if length_1 > length_2:
         long = linkedList_1
         slow = linkedList_2
@@ -51,7 +53,7 @@ def getIntersection(linkedList_1, linkedList_2):
             return True, long.next.val
         long = long.next
         slow = slow.next
-    return False, 0
+    return False, None
 
 
 if __name__ == '__main__':
