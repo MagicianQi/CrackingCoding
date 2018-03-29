@@ -99,4 +99,4 @@ if __name__ == '__main__':
     g.add_node(c)
     g.add_link(a, b)
     g.add_link(a, c)
-    print(haveRoute(g, b, d))
+    print(haveRoute(g, a, c))
